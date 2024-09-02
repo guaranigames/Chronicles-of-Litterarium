@@ -17,10 +17,13 @@
     {"name":"Timelines","order":7,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_collision","order":2,"path":"objects/obj_collision/obj_collision.yy",},
     {"name":"obj_player","order":1,"path":"objects/obj_player/obj_player.yy",},
+    {"name":"spr_collision","order":3,"path":"sprites/spr_collision/spr_collision.yy",},
     {"name":"spr_player_front","order":1,"path":"sprites/spr_player_front/spr_player_front.yy",},
     {"name":"spr_player_left","order":2,"path":"sprites/spr_player_left/spr_player_left.yy",},
     {"name":"spr_player_right","order":3,"path":"sprites/spr_player_right/spr_player_right.yy",},
+    {"name":"spr_seila","order":2,"path":"sprites/spr_seila/spr_seila.yy",},
     {"name":"ts_tavern","order":1,"path":"tilesets/ts_tavern/ts_tavern.yy",},
   ],
 }
