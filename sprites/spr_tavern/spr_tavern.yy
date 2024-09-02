@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Tile Sets",
-    "path":"folders/Tile Sets.yy",
+    "path":"folders/Sprites/Tile Sets.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
