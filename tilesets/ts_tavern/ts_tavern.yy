@@ -1,5 +1,5 @@
 {
-  "$GMTileSet":"",
+  "$GMTileSet":"v1",
   "%Name":"ts_tavern",
   "autoTileSets":[],
   "macroPageTiles":{
@@ -8,7 +8,7 @@
     "TileSerialiseData":[],
   },
   "name":"ts_tavern",
-  "out_columns":1,
+  "out_columns":2,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -26,10 +26,6 @@
     "name":"Default",
     "path":"texturegroups/Default",
   },
-  "tileAnimation":{
-    "FrameData":[0,1,],
-    "SerialiseFrameCount":1,
-  },
   "tileAnimationFrames":[],
   "tileAnimationSpeed":15.0,
   "tileHeight":16,
@@ -38,5 +34,5 @@
   "tileWidth":16,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":2,
+  "tile_count":4,
 }
