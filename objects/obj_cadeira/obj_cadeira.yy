@@ -28,11 +28,14 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
     "name":"spr_cadeira",
     "path":"sprites/spr_cadeira/spr_cadeira.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_cadeira",
+    "path":"sprites/spr_cadeira/spr_cadeira.yy",
+  },
   "visible":true,
 }
