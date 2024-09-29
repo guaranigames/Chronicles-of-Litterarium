@@ -1,17 +1,16 @@
-/// @description Insert description here
-// You can write your code in this editor
+// Camera (SF)
 camera_set_view_size(view_camera[0], global.view_w, global.view_h);
 
 if (room_get_name(rm_taberna) == true) {
 	exit;
 } else {
 	if (instance_exists(player_cam)) {
-		var x1 = player_cam.x - global.view_w / 2;
-		var y1 = player_cam.y - global.view_h / 2;
+		var _x1 = player_cam.x - global.view_w / 2;
+		var _y1 = player_cam.y - global.view_h / 2;
 		
-		x1 = clamp(x1,0,room_width - global.view_w)
-		y1 = clamp(y1,0,room_width - global.view_h)
+		_x1 = clamp(_x1,0,room_width - global.view_w)
+		_y1 = clamp(_y1,0,room_width - global.view_h)
 		
-		camera_set_view_pos(view_camera[0], x1, y1)
+		camera_set_view_pos(view_camera[0], _x1, _y1)
 	}
 }

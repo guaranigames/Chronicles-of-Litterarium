@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_wall",
+  "%Name":"obj_colisao",
   "eventList":[],
   "managed":true,
-  "name":"obj_wall",
+  "name":"obj_colisao",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,9 +28,12 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"spr_wall",
-    "path":"sprites/spr_wall/spr_wall.yy",
+    "name":"spr_colisao",
+    "path":"sprites/spr_colisao/spr_colisao.yy",
   },
-  "spriteMaskId":null,
-  "visible":true,
+  "spriteMaskId":{
+    "name":"spr_colisao",
+    "path":"sprites/spr_colisao/spr_colisao.yy",
+  },
+  "visible":false,
 }

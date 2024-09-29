@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_collision",
+  "%Name":"obj_parede",
   "eventList":[],
   "managed":true,
-  "name":"obj_collision",
+  "name":"obj_parede",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,12 +28,9 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"spr_collision",
-    "path":"sprites/spr_collision/spr_collision.yy",
+    "name":"spr_parede",
+    "path":"sprites/spr_parede/spr_parede.yy",
   },
-  "spriteMaskId":{
-    "name":"spr_collision",
-    "path":"sprites/spr_collision/spr_collision.yy",
-  },
-  "visible":false,
+  "spriteMaskId":null,
+  "visible":true,
 }

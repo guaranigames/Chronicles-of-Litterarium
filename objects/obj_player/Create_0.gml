@@ -1,17 +1,12 @@
-#region Camera
-// Funcionamento de perceguição de camera 
-//if (!instance_exists(obj_camera)) {
+#region Camera (oito direções)
 
-//instance_create_layer(0,0, "instances", obj_camera)
-	
-//}
+// Funcionamento da camera em 8 direções
 
 //camera = instance_create_layer(x, y, layer, obj_camera)
 //camera.alvo = id
 #endregion
 
-#region Controller
-global.gamepad_id = noone;
+#region Controle
 function getGamepad() {
 	for (var i = 0; i < gamepad_get_device_count(); i++) {
 		if (gamepad_is_connected(i)) {
@@ -23,8 +18,10 @@ function getGamepad() {
 }
 #endregion
 
-#region Fortinite Mooovies
+#region Movimentação
+
 // Declaração de variaveis para Movimentação
+
 move_ad = 0
 move_ws = 0
 hsp=0

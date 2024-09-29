@@ -1,23 +1,23 @@
 #region Fortinite Mooovies
 
-// Movimentação com Colisão Ativa
+// Movimentação com Colisão Ativa (obj_collision, obj_wall, obj_mesa, obj_cadeira) por enquanto.
 // Suporte ao controle
 
-var leftKey, rightKey, upKey, downKey
+var _left_key, _right_key, _up_key, _down_key
 
 getGamepad();
 
-leftKey = keyboard_check(ord("A")) || gamepad_button_check(global.gamepad_id, gp_padl)
-rightKey = keyboard_check(ord("D")) || gamepad_button_check(global.gamepad_id, gp_padr)
-upKey = keyboard_check(ord("W")) || gamepad_button_check(global.gamepad_id, gp_padu)
-downKey = keyboard_check(ord("S")) || gamepad_button_check(global.gamepad_id, gp_padd)
+_left_key = keyboard_check(ord("A")) || gamepad_button_check(global.gamepad_id, gp_padl)
+_right_key = keyboard_check(ord("D")) || gamepad_button_check(global.gamepad_id, gp_padr)
+_up_key = keyboard_check(ord("W")) || gamepad_button_check(global.gamepad_id, gp_padu)
+_down_key = keyboard_check(ord("S")) || gamepad_button_check(global.gamepad_id, gp_padd)
 
-move_ad = -leftKey + rightKey
+move_ad = -_left_key + _right_key
 
 hsp = move_ad * spd
 
-if place_meeting(x+hsp,y, [obj_collision, obj_wall]) {
-	while !place_meeting(x+sign(hsp),y,[obj_collision, obj_wall]) {
+if place_meeting(x+hsp,y, global.general_collision) {
+	while !place_meeting(x+sign(hsp),y,global.general_collision) {
 		x+=sign(hsp)
 	}
 	hsp=0
@@ -25,44 +25,49 @@ if place_meeting(x+hsp,y, [obj_collision, obj_wall]) {
 
 x += hsp
 
-move_ws = -upKey + downKey
+move_ws = -_up_key + _down_key
 
 vsp = move_ws * spd
 
-if place_meeting(x,y+vsp,[obj_collision, obj_wall]) {
-	while !place_meeting(x,y+sign(vsp),[obj_collision, obj_wall]) {
+if place_meeting(x,y+vsp,global.general_collision) {
+	while !place_meeting(x,y+sign(vsp),global.general_collision) {
 		y+=sign(vsp)
 	}
 	vsp=0
 }
 y += vsp
 
-// tentativa de código para limitar movimentação apenas em 4 direções (ao contrário das 8 direções).
-if (upKey && leftKey) or (upKey && rightKey) or (downKey && leftKey) or (downKey && rightKey) {
+// Trava para quatro direções (arrumar)
+
+/*
+if (_up_key && _left_key) or (_up_key && _right_key) or (_down_key && _left_key) or (_down_key && _right_key) {
 	spd = 0
 } else {
 	spd = 1
 }
+*/
 
 #endregion
 
 #region Sprite Sucumbido
+
 // Alteração de sprite por Pressionamento de Tecla
-if (!upKey || !downKey) {
-	if (leftKey) {
+
+if (!_up_key || !_down_key) {
+	if (_left_key) {
 		sprite_index = spr_playerLeft
 	}
 	
-	if (rightKey) {
+	if (_right_key) {
 		sprite_index = spr_playerRight
 	}
 } 
 
-if (downKey) {
+if (_down_key) {
 	sprite_index = spr_playerFront
 } 
 
-if (upKey) {
+if (_up_key) {
 	sprite_index = spr_playerBack
 }
 
@@ -70,49 +75,49 @@ if (upKey) {
 último sprite a ser definido por alguma tecla de movimento. */
 
 if (sprite_index == spr_playerBack) {
-	if (!upKey) {
+	if (!_up_key) {
 		sprite_index = spr_playerBack_idle
 	}
 }
 if (sprite_index == spr_playerRight) {
-	if (!rightKey) {
+	if (!_right_key) {
 		sprite_index = spr_playerRight_idle
 	}
 }
 if (sprite_index == spr_playerFront) {
-	if (!downKey) {
+	if (!_down_key) {
 		sprite_index = spr_playerFront_idle
 	}
 }
 if (sprite_index == spr_playerLeft_idle) {
-	if (!leftKey) {
+	if (!_left_key) {
 		sprite_index = spr_playerLeft_idle
 	}
 }
 
-
-
-
-//-------Fazer check de qual tecla foi precionada a fim de pausar a animação quando parado
+#region Old Sucumbido
+// Check de qual tecla foi pressionada a fim de pausar a animação quando parado
 /*
 if (keyboard_lastkey == ord("W") && executando == false) {
-    sprite_index = spr_player_back_idle
+    sprite_index = spr_playerBack_idle
 }
 
 if (keyboard_lastkey == ord("S") && executando == false) {
-    sprite_index = spr_player_front_idle
+    sprite_index = spr_playerFront_idle
 }
 
 if (keyboard_lastkey == ord("D") && executando == false) {
-    sprite_index = spr_player_right_idle
+    sprite_index = spr_playerRight_idle
 }
 
 if (keyboard_lastkey == ord("A") && executando == false) {
-    sprite_index = spr_player_left_idle
+    sprite_index = spr_playerLeft_idle
 }
 */
+#endregion
 
 // Alteração de sprite caso parado
+
 if (hsp == 0 and vsp == 0) {
 	image_speed = 0
 	image_index = 0
