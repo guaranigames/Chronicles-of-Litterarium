@@ -6,3 +6,4 @@ como primeiro argumento tipo 'Real' e noone teoricamente não faz parte :/
 */
 global.gamepad_id = 0;
 global.general_collision = [obj_colisao, obj_mesa, obj_mesa_bar, obj_parede, obj_cadeira]
+global.botao = 1

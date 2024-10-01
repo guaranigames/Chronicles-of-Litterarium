@@ -54,12 +54,11 @@ if (_up_key && _left_key) or (_up_key && _right_key) or (_down_key && _left_key)
 // Alteração de sprite por Pressionamento de Tecla
 
 if (!_up_key || !_down_key) {
-	if (_left_key) {
-		sprite_index = spr_playerLeft
-	}
-	
 	if (_right_key) {
 		sprite_index = spr_playerRight
+	}
+	if (_left_key) {
+		sprite_index = spr_playerLeft
 	}
 } 
 
@@ -74,14 +73,14 @@ if (_up_key) {
 /* Caso nenhuma tecla esteja sendo pressionada, o sprite entra no estado "idle" de acordo com o
 último sprite a ser definido por alguma tecla de movimento. */
 
-if (sprite_index == spr_playerBack) {
-	if (!_up_key) {
-		sprite_index = spr_playerBack_idle
-	}
-}
 if (sprite_index == spr_playerRight) {
 	if (!_right_key) {
 		sprite_index = spr_playerRight_idle
+	}
+}
+if (sprite_index == spr_playerLeft_idle) {
+	if (!_left_key) {
+		sprite_index = spr_playerLeft_idle
 	}
 }
 if (sprite_index == spr_playerFront) {
@@ -89,9 +88,9 @@ if (sprite_index == spr_playerFront) {
 		sprite_index = spr_playerFront_idle
 	}
 }
-if (sprite_index == spr_playerLeft_idle) {
-	if (!_left_key) {
-		sprite_index = spr_playerLeft_idle
+if (sprite_index == spr_playerBack) {
+	if (!_up_key) {
+		sprite_index = spr_playerBack_idle
 	}
 }
 
