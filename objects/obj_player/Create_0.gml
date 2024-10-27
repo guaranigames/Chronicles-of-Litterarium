@@ -31,4 +31,57 @@ notpoggers = 0
 notpogger2 = 0
 inicio = 1
 executando = true
+andar = true
+npc_dialogo = noone
+estado = noone
+estado_txt = "parado"
+#endregion
+
+#region Dialogo
+estado_indo_dialogo = function() {
+	estado_txt = "Indo p/ Dialogo"	
+	andar = false
+	sprite_index = spr_playerBack_idle
+	x = obj_npc.x - 15
+	y = obj_npc.y - 3
+	
+	if (npc_dialogo) {
+		var _x = npc_dialogo.x 
+		if (x != _x) {
+			x = npc_dialogo.x - 15
+			y = npc_dialogo.y - 3
+			x = round(x)
+			y = round(y)
+		} else {
+			estado = estado_dialogo()
+		}
+	}
+}
+
+
+estado_dialogo = function() {
+		estado_txt = "Dialogo"
+		andar = false
+		sprite_index = spr_playerBack_idle
+		//if (!instance_exists(obj_dialogo)) {
+		//	var _obj_dialogo = instance_create_depth(0, 0 , 0, obj_dialogo)
+		//		with(npc_dialogo) {
+		//			_obj_dialogo.dialogo = dialogo	
+		//		}
+		//}
+		if (!instance_exists(obj_dialogo)){
+		var _obj_dialogo = instance_create_depth(0,0,0,obj_dialogo)
+			//passa o dialogo do npc o obj dialogo
+			with(obj_npc){
+			_obj_dialogo.dialog = dialogg
+		}
+	}
+}
+
+estado_dialogo_false = function() {
+		andar = true
+}
+
+	
+
 #endregion

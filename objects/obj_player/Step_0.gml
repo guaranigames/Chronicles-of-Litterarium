@@ -1,8 +1,12 @@
+if (keyboard_check_released(vk_tab)) global.debug = !global.debug
+
 #region Fortinite Mooovies
 
 // Movimentação com Colisão Ativa (obj_collision, obj_wall, obj_mesa, obj_cadeira) por enquanto.
 // Suporte ao controle
 
+if (andar = true) {
+	
 var _left_key, _right_key, _up_key, _down_key
 
 getGamepad();
@@ -94,6 +98,8 @@ if (sprite_index == spr_playerBack) {
 	}
 }
 
+}
+
 #region Old Sucumbido
 // Check de qual tecla foi pressionada a fim de pausar a animação quando parado
 /*
@@ -135,12 +141,12 @@ if (vsp < 0 || vsp > 0) {
 } 
 
 // Easter Egg
-if (keyboard_check(vk_shift)) {
-	notpoggers++	
-} else if (keyboard_check(vk_space)) {
-	notpogger2++
-} 
-if (notpoggers > 7 && notpogger2 > 7) {
-	sprite_index = spr_player_front_preto
-}
+//if (keyboard_check(vk_shift)) {
+//	notpoggers++	
+//} else if (keyboard_check(vk_space)) {
+//	notpogger2++
+//} 
+//if (notpoggers > 7 && notpogger2 > 7) {
+//	sprite_index = spr_player_front_preto
+//}
 #endregion
