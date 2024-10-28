@@ -8,3 +8,5 @@ global.gamepad_id = 0;
 global.general_collision = [obj_colisao, obj_mesa, obj_mesa_bar, obj_parede, obj_cadeira, obj_npc]
 global.botao = 1
 global.debug = false
+global.pause	= false
+global.vel_txt	= .4

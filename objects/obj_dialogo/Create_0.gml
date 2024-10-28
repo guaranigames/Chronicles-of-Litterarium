@@ -54,7 +54,7 @@ dialo = function(_dialogo)
 	var _txt			= _dialogo.texto[pag]
 	var _txt_atual		= string_copy(_txt, 1, indice)
 	var _txt_tam		= string_length(_txt)
-	var _txt_vel		= _dialogo.txt_vel
+	var _txt_vel		= global.vel_txt
 	
 	//Y y Y y y Y (yy)
 	var _yy				= _gui_h - (_escala_y * _spr_h)

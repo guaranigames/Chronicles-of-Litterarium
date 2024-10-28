@@ -4,7 +4,7 @@ dialogg =
 {
 	texto	: [" HAHAHAHAHHA ", "haiiii eu gosto quando me seduzem assim e quando provavelmente colocam diversos objetos legais dentro do coiso la e quando certas pessoas inventam de fazer um texto enorrrrrrrrrrrrrrrrrrme para apenas caber na tela xd", "esta porra é o dialogo 3 eu nao aguento mais digitar coisa estranha apenas para conseguir ocupar espaço", "a vida é sobre o tedio de gozar dentro e a ansia e engravidar aquela gostosa"],
 	retrato : [],
-	txt_vel : .4
+	txt_vel : global.vel_txt
 }
 
 /* Exemplo para copia em multiplos NPC's
