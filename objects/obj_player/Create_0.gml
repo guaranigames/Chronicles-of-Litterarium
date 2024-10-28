@@ -71,6 +71,7 @@ estado_dialogo = function() {
 		//}
 		if (!instance_exists(obj_dialogo)){
 		var _obj_dialogo = instance_create_depth(0,0,0,obj_dialogo)
+		_obj_dialogo.player = id
 			//passa o dialogo do npc o obj dialogo
 			with(obj_npc){
 			_obj_dialogo.dialog = dialogg
@@ -80,8 +81,7 @@ estado_dialogo = function() {
 
 estado_dialogo_false = function() {
 		andar = true
+		instance_destroy(obj_dialogo)
 }
-
-	
 
 #endregion

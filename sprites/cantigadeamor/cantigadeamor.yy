@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Jesus",
-    "path":"folders/Sprites/Objects/Jesus.yy",
+    "name":"Future Objects",
+    "path":"folders/Sprites/Objects/Future Objects.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

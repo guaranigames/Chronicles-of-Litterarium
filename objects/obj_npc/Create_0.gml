@@ -2,10 +2,22 @@
 
 dialogg = 
 {
-	texto : [" HAHAHAHAHHA "],
-	retrato : []
+	texto	: [" HAHAHAHAHHA ", "haiiii eu gosto quando me seduzem assim e quando provavelmente colocam diversos objetos legais dentro do coiso la e quando certas pessoas inventam de fazer um texto enorrrrrrrrrrrrrrrrrrme para apenas caber na tela xd", "esta porra é o dialogo 3 eu nao aguento mais digitar coisa estranha apenas para conseguir ocupar espaço", "a vida é sobre o tedio de gozar dentro e a ansia e engravidar aquela gostosa"],
+	retrato : [],
+	txt_vel : .4
 }
 
+/* Exemplo para copia em multiplos NPC's
+
+dialogg = 
+{
+	texto	: [" Teste 1 ", " Teste 2 "]
+	
+	//Vel do texto
+	txt_vel : .3
+}
+
+*/
 
 #endregion
 
@@ -30,7 +42,7 @@ dialogo_area = function() {
 		image_blend = c_red
 		
 		//Caso enter, entra em estado dialogo
-		if (keyboard_check_pressed(vk_space)) {
+		if (keyboard_check_pressed(vk_enter)) {
 			with(_player) {
 				if (estado != estado_dialogo() ) {
 					estado = estado_indo_dialogo()
