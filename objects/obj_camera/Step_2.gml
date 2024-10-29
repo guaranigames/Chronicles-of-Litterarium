@@ -10,6 +10,7 @@ if (room_get_name(rm_taberna) == true) {
 		_x1 = clamp(_x1,0,room_width - global.view_w)
 		global.x1 = _x1
 		_y1 = clamp(_y1,0,room_width - global.view_h)
+		global.y1 = _y1
 		
 		camera_set_view_pos(view_camera[0], _x1, _y1)
 	}

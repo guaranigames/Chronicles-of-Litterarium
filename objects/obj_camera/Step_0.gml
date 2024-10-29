@@ -21,9 +21,9 @@ surface_resize(application_surface, cw, ch)
 #endregion
 
 // Check do f11 para fullscreen (mudar para outra função e futuramente e dar fix)
-if (keyboard_check_released(vk_f11)) {
-	window_set_fullscreen(!window_get_fullscreen())	
-	window_center()
-}
+//if (keyboard_check_released(vk_f11)) {
+//	window_set_fullscreen(!window_get_fullscreen())	
+//	window_center()
+//}
 
 
