@@ -1,0 +1,1 @@
+global.font_main_pause = fnt_menu_pause

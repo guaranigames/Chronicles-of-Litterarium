@@ -7,6 +7,7 @@ dialogg =
 	txt_vel : global.vel_txt
 }
 
+
 /* Exemplo para copia em multiplos NPC's
 
 dialogg = 
@@ -49,12 +50,6 @@ dialogo_area = function() {
 					
 					npc_dialogo = other.id
 				}
-			}
-		}
-		
-		if (keyboard_check_pressed(vk_escape)) {
-			with(_player) {
-				estado_dialogo_false()
 			}
 		}
 	} 

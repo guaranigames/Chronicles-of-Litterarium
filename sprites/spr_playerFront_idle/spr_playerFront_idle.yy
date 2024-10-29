@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"idle",
-    "path":"folders/Sprites/Player/idle.yy",
+    "name":"Normal",
+    "path":"folders/Sprites/Player/idle/Normal.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
