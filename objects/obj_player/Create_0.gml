@@ -3,20 +3,24 @@ event_inherited();
 
 // Funcionamento da camera em 8 direções
 
-//camera = instance_create_layer(x, y, layer, obj_camera)
-//camera.alvo = id
+if (!instance_exists(obj_camera)) {
+	instance_create_layer(0, 0, "Instances", obj_camera)
+}
+
+camera = instance_create_layer(x, y, layer, obj_camera)
+camera.alvo = id
 #endregion
 
 #region Controle
-function getGamepad() {
-	for (var i = 0; i < gamepad_get_device_count(); i++) {
-		if (gamepad_is_connected(i)) {
-			global.gamepad_id = i;
-			return true;
-		}
-	}
-	return false;
-}
+//function getGamepad() {
+//	for (var i = 0; i < gamepad_get_device_count(); i++) {
+//		if (gamepad_is_connected(i)) {
+//			global.gamepad_id = i;
+//			return true;
+//		}
+//	}
+//	return false;
+//}
 #endregion
 
 #region Movimentação
@@ -35,8 +39,7 @@ andar			= true
 npc_dialogo		= noone
 estado			= noone
 estado_txt		= "parado"
-max_vel			= 1.2
-acel			= 0
+max_vel			= 2
 
 keyboard_set_map(ord("A"), vk_left)
 keyboard_set_map(ord("D"), vk_right)
@@ -45,31 +48,41 @@ keyboard_set_map(ord("S"), vk_down)
 
 #endregion
 
-#region Dialogo (Arrumar com novas variaveis)
+#region Dialogo (Arrumar com novas variaveis) (com erro)
+/*
 estado_indo_dialogo = function() {
 	estado_txt = "Indo p/ Dialogo"	
-	andar = false
 	sprite_index = spr_playerBack_idle
-	x = obj_npc.x - 15
-	y = obj_npc.y - 3
-	
+	andar = false
+
 	if (npc_dialogo) {
-		var _x = npc_dialogo.x 
-		if (x != _x) {
-			x = npc_dialogo.x - 15
-			y = npc_dialogo.y - 3
-			x = round(x)
-			y = round(y)
-		} else {
-			estado = estado_dialogo()
-		}
+		var _x = npc_dialogo.x
+		var _y = npc_dialogo.y + npc_dialogo.margem
+		//if (bbox_top != _y) {
+		//	velv = sign(_y - bbox_top)
+		//	sprite_index = spr_playerBack_idle
+		//	y = round(y)
+		//} else if (x != _x) {
+		//	sprite_index = spr_playerBack_idle
+		//	velh = sign(_x - x)
+			
+		//	xscale = sign(_x - x)
+			
+		//	x = round(x)
+		//} else {
+		//	estado = estado_dialogo()	
+		//}
 	}
 }
 
 estado_dialogo = function() {
 		estado_txt = "Dialogo"
+		velh = 0
+		velv = 0
+
 		andar = false
 		sprite_index = spr_playerBack_idle
+		max_vel = 0
 		//if (!instance_exists(obj_dialogo)) {
 		//	var _obj_dialogo = instance_create_depth(0, 0 , 0, obj_dialogo)
 		//		with(npc_dialogo) {
@@ -90,5 +103,6 @@ estado_dialogo_false = function() {
 		andar = true
 		instance_destroy(obj_dialogo)
 }
-
+*/
 #endregion
+

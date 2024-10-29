@@ -12,7 +12,8 @@
 //}
 #endregion
 
-#region DIALOGOOOOOOOO
+#region DIALOGOOOOOOOO (erro) (fracasso 2)
+/*
 dialog			= noone
 indice			= 1
 pag				= 0
@@ -41,7 +42,7 @@ dialo = function(_dialogo)
 	static _spr_h		= sprite_get_height(spr_caixa_dialogo)
 	
 	//FONTEEE
-	draw_set_font(fnt_menu)
+	draw_set_font(fnt_monocraft_dialogo)
 	
 	//Conversao da da escala em pixels
 	var _escala_x		= (_gui_w / _spr_w) * escala_caixa
@@ -52,6 +53,7 @@ dialo = function(_dialogo)
 	escala_caixa		= lerp(escala_caixa, 1, .1)
 	
 	var _txt			= _dialogo.texto[pag]
+	global.txt			= _txt
 	var _txt_atual		= string_copy(_txt, 1, indice)
 	var _txt_tam		= string_length(_txt)
 	var _txt_vel		= global.vel_txt
@@ -87,6 +89,7 @@ dialo = function(_dialogo)
 			} else {
 				//Cabo a pagina
 				libera_player()
+				obj_player.max_vel = 2
 			}
 		}
 	
@@ -96,4 +99,16 @@ dialo = function(_dialogo)
 		draw_set_font(-1)
 	}
 }
+*/
 #endregion
+
+npc_nome = "";
+texto[0] = "";
+pagina = 0
+
+inicializar = false
+
+
+
+
+

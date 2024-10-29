@@ -1,2 +1,4 @@
 draw_self()
-draw_text(x + 20, y, x)
+if (global.debug) {
+	draw_text(x + 20, y, x)
+}

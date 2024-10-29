@@ -12,8 +12,8 @@
   "name":"obj_dialogo",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Controle",
+    "path":"folders/Objects/Controle.yy",
   },
   "parentObjectId":null,
   "persistent":false,

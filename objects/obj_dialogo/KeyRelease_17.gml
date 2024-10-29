@@ -1,1 +1,1 @@
-global.vel_txt = .4
+//global.vel_txt = .4

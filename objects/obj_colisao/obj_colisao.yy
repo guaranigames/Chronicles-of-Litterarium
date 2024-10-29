@@ -6,8 +6,8 @@
   "name":"obj_colisao",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Cenario",
+    "path":"folders/Objects/Cenario.yy",
   },
   "parentObjectId":null,
   "persistent":false,

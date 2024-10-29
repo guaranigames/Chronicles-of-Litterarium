@@ -18,7 +18,15 @@ if accept_key {
 			case 0 :
 				switch(pos) {
 	
-				case 0: room_goto(rm_taberna) break;
+				case 0: 
+				room_goto(rm_taverna_old) 
+				var _res_w = 1280;
+				var _res_h = 720;
+				var _res_scale = 3;
+				var _view_w = _res_w / _res_scale;
+				var _view_h = _res_h / _res_scale;
+				surface_resize(application_surface, _view_w * _res_scale, _view_h * _res_scale)
+				break;
 		
 				case 1: menu_level = 1 break;
 
@@ -65,7 +73,6 @@ if accept_key {
 					//Desativa Volume Pfv
 					ativacao =! ativacao
 				}
-				
 				break;
 			
 				//Voltar

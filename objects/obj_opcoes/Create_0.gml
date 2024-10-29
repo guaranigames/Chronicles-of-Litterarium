@@ -1,1 +1,1 @@
-global.font_main = fnt_menu
+global.font_main = fnt_monocraft_menu

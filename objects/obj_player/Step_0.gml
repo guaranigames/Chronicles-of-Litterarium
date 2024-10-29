@@ -1,6 +1,6 @@
+if (!global.pause) {
 #region Debug
-if (global.pause) exit;
-
+if (andar = true) {
 if (keyboard_check_released(vk_tab)) global.debug = !global.debug
 #endregion
 
@@ -75,12 +75,14 @@ if ((_up xor _down) or (_left xor _right)) {
 	//var _max_velv = lengthdir_y(max_vel, _dir)
 	velv = lengthdir_y(max_vel, _dir)
 	
+	
 } else {
 	velh = 0
 	velv = 0
 } 
 #endregion
 #endregion
+
 
 #region Sprite Sucumbido
 // Alteração de sprite por Pressionamento de Tecla
@@ -127,6 +129,7 @@ if (sprite_index == spr_playerBack) {
 }
 
 
+
 #endregion
 
 #region Old Sucumbido
@@ -169,7 +172,7 @@ if (velh == 0 and velv == 0) {
 	image_index = 0
 	//executando = false
 } 
-
+}
 
 // Easter Egg
 //if (keyboard_check(vk_shift)) {
@@ -180,4 +183,20 @@ if (velh == 0 and velv == 0) {
 //if (notpoggers > 7 && notpogger2 > 7) {
 //	sprite_index = spr_player_front_preto
 //}
+
+#endregion
+}
+#region Dialogo
+if (global.pause == false) {
+if distance_to_object(obj_par_npc) <= 10 {
+	if keyboard_check_pressed(vk_enter) and global.dialogo == false{
+		var _npc = instance_nearest(x, y, obj_par_npc)
+		var _dialogo = instance_create_layer(x, y, "Dialogo", obj_dialogo)
+		_dialogo.npc_nome = _npc.nome
+		andar = false
+		sprite_index = spr_playerBack_idle
+	} 
+} 
+}
+
 #endregion

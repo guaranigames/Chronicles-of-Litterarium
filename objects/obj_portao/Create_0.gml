@@ -1,0 +1,1 @@
+var _target_room, _targetX, _targetY

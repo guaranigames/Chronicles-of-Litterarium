@@ -1,15 +1,15 @@
-if (place_meeting(x + velh, y, obj_colisao)) {
+if (place_meeting(x + velh, y, global.general_collision)) {
 	var _velh = sign(velh)
-	while(!place_meeting(x + _velh, y, obj_colisao)) {
+	while(!place_meeting(x + _velh, y, global.general_collision)) {
 		x += _velh
 	}
 	velh = 0
 }
 x += round(velh)
 
-if (place_meeting(x, y + velv, obj_colisao)) {
+if (place_meeting(x, y + velv, global.general_collision)) {
 	var _velv = sign(velv)	
-	while (!place_meeting(x, y + _velv, obj_colisao)) {
+	while (!place_meeting(x, y + _velv, global.general_collision)) {
 		y += _velv
 		round(y)
 	}
@@ -17,6 +17,7 @@ if (place_meeting(x, y + velv, obj_colisao)) {
 }
 y += round(velv)
 
+#region Colisão antiga
 /*
 if (place_meeting(x + velh, y, global.general_collision)) {
 	var _colisao = instance_place(x + velh, y, global.general_collision)
@@ -43,3 +44,4 @@ if (_colisao) {
 }
 y += velv
 */
+#endregion

@@ -1,1 +1,1 @@
-font_delete(global.font_main_pause)
+//font_delete(global.font_main_pause)

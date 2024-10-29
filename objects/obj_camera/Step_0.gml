@@ -1,6 +1,23 @@
+if (follow != noone) {
+	xTo = follow.x
+	yTo = follow.y
+}
+
+x += (xTo - x) / 25
+y += (yTo - y) / 25
+
+camera_set_view_pos(view_camera[0], x - (camWidght * 0.5), y - (camHeight * 0.5))
+
 #region Seguir Player (fSF)
-/*if (!alvo) exit;
-else {
+/*
+if (instance_exists(obj_player)) {
+	x = lerp(x, obj_player.x, .1)
+	y = lerp(y, obj_player.y, .1)
+}
+
+/*if (!alvo) {
+	exit;
+} else {
 	x = alvo.x;
 	y = alvo.y
 }	*/
@@ -9,7 +26,6 @@ else {
 #region Resolução (fSF)
 
 // Função onde altera resolução do jogo (fSF)
-
 /*
 ch = lerp(ch, camerah, .5)
 camera_set_view_size(view_camera[0], cw, ch)
@@ -25,5 +41,3 @@ surface_resize(application_surface, cw, ch)
 //	window_set_fullscreen(!window_get_fullscreen())	
 //	window_center()
 //}
-
-

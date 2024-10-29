@@ -19,7 +19,11 @@ if accept_key {
 			case 0 :
 				switch(pos) {
 	
-				case 0: global.pause = false break;
+				case 0: 
+				global.pause = false 
+				layer_set_visible("Effect_Chroma",	0)
+				layer_set_visible("Effect_Blurr",	0)
+				break;
 		
 				case 1: menu_level = 1 break;
 
@@ -70,9 +74,7 @@ if accept_key {
 				break;
 			
 				//Voltar
-				case 2:
-				menu_level = 0	
-				break;
+				case 2: menu_level = 0 break;
 			
 			}
 		break;

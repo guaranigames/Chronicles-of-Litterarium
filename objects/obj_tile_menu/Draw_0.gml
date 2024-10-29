@@ -6,7 +6,7 @@ for(var _i = 0; _i < op_lenght; _i++) {
 	_new_w = max(_new_w, _op_w)
 }
 width = _new_w + op_border*2
-height = op_border * 2 + font_get_size(fnt_menu_bold) + (op_lenght - 1) * op_space;
+height = op_border * 2 + font_get_size(fnt_monocraft_menu) + (op_lenght - 1) * op_space;
 
 //Centralização
 x = camera_get_view_x(view_camera[0]) + room_width/2 - width/2

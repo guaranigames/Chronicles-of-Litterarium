@@ -2,8 +2,7 @@
 
 dialogg = 
 {
-	texto	: [" HAHAHAHAHHA ", "haiiii eu gosto quando me seduzem assim e quando provavelmente colocam diversos objetos legais dentro do coiso la e quando certas pessoas inventam de fazer um texto enorrrrrrrrrrrrrrrrrrme para apenas caber na tela xd", "esta porra é o dialogo 3 eu nao aguento mais digitar coisa estranha apenas para conseguir ocupar espaço", "a vida é sobre o tedio de gozar dentro e a ansia e engravidar aquela gostosa"],
-	retrato : [],
+	texto	: [""],
 	txt_vel : global.vel_txt
 }
 
@@ -23,7 +22,7 @@ dialogg =
 #endregion
 
 #region Area estado dialogo
-larg = 25;
+larg = 15;
 alt = 8;
 margem = 5;
 
@@ -43,15 +42,16 @@ dialogo_area = function() {
 		image_blend = c_red
 		
 		//Caso enter, entra em estado dialogo
-		if (keyboard_check_pressed(vk_enter)) {
-			with(_player) {
-				if (estado != estado_dialogo() ) {
-					estado = estado_indo_dialogo()
+
+			if (keyboard_check_pressed(vk_enter)) {
+				with(_player) {
+					if (estado != estado_dialogo() ) {
+						estado = estado_indo_dialogo()
 					
-					npc_dialogo = other.id
+						npc_dialogo = other.id
+					}
 				}
 			}
-		}
 	} 
 }
 #endregion

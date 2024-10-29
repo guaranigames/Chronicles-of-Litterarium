@@ -10,8 +10,8 @@
   "name":"obj_npc",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Depravado",
+    "path":"folders/Objects/NPC/Depravado.yy",
   },
   "parentObjectId":null,
   "persistent":false,

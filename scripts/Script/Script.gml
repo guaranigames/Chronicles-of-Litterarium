@@ -5,7 +5,7 @@ Motivo da função "gamepad_button_check" dar erro é por causa que a mesma apen
 como primeiro argumento tipo 'Real' e noone teoricamente não faz parte :/
 */
 
-/* Função Desconhecida
+//Função Desconhecida
 function getGamepad() {
 	for (var i = 0; i < gamepad_get_device_count(); i++) {
 		if (gamepad_is_connected(i)) {
@@ -16,11 +16,11 @@ function getGamepad() {
 	return false;
 }
 getGamepad();
-*/
 
-global.gamepad_id = 0;
-global.general_collision = [obj_colisao, obj_mesa, obj_mesa_bar, obj_parede, obj_cadeira, obj_npc]
-global.botao = 1
-global.debug = false
-global.pause	= false
-global.vel_txt	= .4
+
+global.gamepad_id			= 0;
+global.general_collision	= [obj_colisao, obj_mesa, obj_mesa_bar, obj_parede, obj_cadeira, obj_npcc]
+global.botao				= 1
+global.debug				= false
+global.pause				= false
+global.vel_txt				= .4

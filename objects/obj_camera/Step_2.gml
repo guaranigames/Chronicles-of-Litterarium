@@ -1,4 +1,6 @@
-// Camera (SF)
+#region Camera old
+// Camera (SF) 
+/*
 camera_set_view_size(view_camera[0], global.view_w, global.view_h);
 
 if (room_get_name(rm_taberna) == true) {
@@ -15,3 +17,5 @@ if (room_get_name(rm_taberna) == true) {
 		camera_set_view_pos(view_camera[0], _x1, _y1)
 	}
 }
+*/
+#endregion
