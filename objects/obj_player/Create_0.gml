@@ -1,4 +1,5 @@
-#region Camera (oito direções)
+event_inherited();
+#region Camera (oito direções) ignora
 
 // Funcionamento da camera em 8 direções
 
@@ -19,25 +20,32 @@ function getGamepad() {
 #endregion
 
 #region Movimentação
+// Variaveis para Movimentação
 
-// Declaração de variaveis para Movimentação
+move_ad			= 0
+move_ws			= 0
+hsp				= 0
+vsp				= 0 
+spd				= 1
+notpoggers		= 0
+notpogger2		= 0
+inicio			= 1
+executando		= true
+andar			= true
+npc_dialogo		= noone
+estado			= noone
+estado_txt		= "parado"
+max_vel			= 1.2
+acel			= 0
 
-move_ad = 0
-move_ws = 0
-hsp=0
-vsp=0 
-spd=1
-notpoggers = 0
-notpogger2 = 0
-inicio = 1
-executando = true
-andar = true
-npc_dialogo = noone
-estado = noone
-estado_txt = "parado"
+keyboard_set_map(ord("A"), vk_left)
+keyboard_set_map(ord("D"), vk_right)
+keyboard_set_map(ord("W"), vk_up)
+keyboard_set_map(ord("S"), vk_down)
+
 #endregion
 
-#region Dialogo
+#region Dialogo (Arrumar com novas variaveis)
 estado_indo_dialogo = function() {
 	estado_txt = "Indo p/ Dialogo"	
 	andar = false
@@ -57,7 +65,6 @@ estado_indo_dialogo = function() {
 		}
 	}
 }
-
 
 estado_dialogo = function() {
 		estado_txt = "Dialogo"

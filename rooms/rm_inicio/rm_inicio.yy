@@ -35,7 +35,7 @@
         {"name":"g_Distort2Scale","type":0,"value":"5",},
         {"name":"g_Distort1Amount","type":0,"value":"1",},
         {"name":"g_Distort2Amount","type":0,"value":"2",},
-        {"name":"g_ChromaSpreadAmount","type":0,"value":"7",},
+        {"name":"g_ChromaSpreadAmount","type":0,"value":"0.5",},
         {"name":"g_CamOffsetScale","type":0,"value":"1",},
         {"name":"g_GlintCol","type":1,"value":"#FF000000",},
         {"name":"g_TintCol","type":1,"value":"#FFFFFFFF",},

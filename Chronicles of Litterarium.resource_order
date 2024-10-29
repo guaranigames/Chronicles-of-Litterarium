@@ -31,6 +31,7 @@
     {"name":"obj_cadeira","order":6,"path":"objects/obj_cadeira/obj_cadeira.yy",},
     {"name":"obj_colisao","order":2,"path":"objects/obj_colisao/obj_colisao.yy",},
     {"name":"obj_dialogo","order":11,"path":"objects/obj_dialogo/obj_dialogo.yy",},
+    {"name":"obj_entidade","order":17,"path":"objects/obj_entidade/obj_entidade.yy",},
     {"name":"obj_jogo","order":16,"path":"objects/obj_jogo/obj_jogo.yy",},
     {"name":"obj_menu","order":7,"path":"objects/obj_menu/obj_menu.yy",},
     {"name":"obj_mesa_bar","order":4,"path":"objects/obj_mesa_bar/obj_mesa_bar.yy",},
