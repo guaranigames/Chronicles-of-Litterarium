@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"Anxiety",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":36.0,
+  "name":"Anxiety",
+  "parent":{
+    "name":"OST",
+    "path":"folders/Sounds/OST.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Anxiety.wav",
+  "type":0,
+  "volume":1.0,
+}

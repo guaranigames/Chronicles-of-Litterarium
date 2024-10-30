@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Future Objects",
-    "path":"folders/Sprites/Objects/Future Objects.yy",
+    "name":"Objects",
+    "path":"folders/Sprites/Objects.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

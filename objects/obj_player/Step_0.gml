@@ -188,15 +188,15 @@ if (velh == 0 and velv == 0) {
 }
 #region Dialogo
 if (global.pause == false) {
-if distance_to_object(obj_par_npc) <= 10 {
-	if keyboard_check_pressed(vk_enter) and global.dialogo == false{
-		var _npc = instance_nearest(x, y, obj_par_npc)
-		var _dialogo = instance_create_layer(x, y, "Dialogo", obj_dialogo)
-		_dialogo.npc_nome = _npc.nome
-		andar = false
-		sprite_index = spr_playerBack_idle
+	if distance_to_object(obj_par_npc) <= 10 {
+		if keyboard_check_pressed(vk_enter) or gamepad_button_check_pressed(global.gamepad_id, gp_start) and global.dialogo == false{
+			var _npc = instance_nearest(x, y, obj_par_npc)
+			var _dialogo = instance_create_layer(x, y, "Dialogo", obj_dialogo)
+			_dialogo.npc_nome = _npc.nome
+			andar = false
+			sprite_index = spr_playerBack_idle
+		} 
 	} 
-} 
 }
 
 #endregion

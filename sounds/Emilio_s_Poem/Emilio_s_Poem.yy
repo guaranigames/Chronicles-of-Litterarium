@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"Emilio_s_Poem",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":35.0,
+  "name":"Emilio_s_Poem",
+  "parent":{
+    "name":"OST",
+    "path":"folders/Sounds/OST.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Emilio_s_Poem.wav",
+  "type":0,
+  "volume":1.0,
+}

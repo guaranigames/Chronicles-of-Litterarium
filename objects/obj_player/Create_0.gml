@@ -3,8 +3,11 @@ event_inherited();
 
 // Funcionamento da camera em 8 direções
 
+if (room = rm_biblioteca) {
+} else {
 if (!instance_exists(obj_camera)) {
 	instance_create_layer(0, 0, "Instances", obj_camera)
+}
 }
 
 camera = instance_create_layer(x, y, layer, obj_camera)

@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"The_Mistress__Secret",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":64.15842,
+  "name":"The_Mistress__Secret",
+  "parent":{
+    "name":"OST",
+    "path":"folders/Sounds/OST.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"The_Mistress__Secret.wav",
+  "type":0,
+  "volume":1.0,
+}

@@ -14,3 +14,4 @@ if (instance_exists(obj_npc)) {
 		image_speed = 0
 	}
 }
+

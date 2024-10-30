@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"The_Bishop_s_Lore",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":62.0,
+  "name":"The_Bishop_s_Lore",
+  "parent":{
+    "name":"OST",
+    "path":"folders/Sounds/OST.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"The_Bishop_s_Lore.wav",
+  "type":0,
+  "volume":1.0,
+}

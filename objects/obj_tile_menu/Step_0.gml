@@ -19,7 +19,7 @@ if accept_key {
 				switch(pos) {
 	
 				case 0: 
-				room_goto(rm_taverna_old) 
+				room_goto(rm_biblioteca) 
 				var _res_w = 1280;
 				var _res_h = 720;
 				var _res_scale = 3;

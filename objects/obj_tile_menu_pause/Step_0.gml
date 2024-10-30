@@ -1,7 +1,7 @@
 if (global.pause == true) {
-up_key = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
-down_key = keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"));
-accept_key = keyboard_check_pressed(vk_enter)
+up_key = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W")) || gamepad_button_check_pressed(global.gamepad_id, gp_padu);
+down_key = keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S")) || gamepad_button_check_pressed(global.gamepad_id, gp_padd);;
+accept_key = keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(global.gamepad_id, gp_face1)
 
 op_lenght = array_length(option[menu_level])
 

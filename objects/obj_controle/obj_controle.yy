@@ -9,8 +9,8 @@
   "name":"obj_controle",
   "overriddenProperties":[],
   "parent":{
-    "name":"NPC",
-    "path":"folders/Objects/NPC.yy",
+    "name":"Controle",
+    "path":"folders/Objects/Controle.yy",
   },
   "parentObjectId":null,
   "persistent":false,
